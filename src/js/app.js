@@ -2,10 +2,13 @@ const INPUT_WEIGHT = document.getElementById("input-weight");
 const INPUT_HEIGHT = document.getElementById("input-height");
 const BTN_CAL      = document.getElementById("btn-cal");
 const BTN_RESET    = document.getElementById("btn-reset");
-const HOLDER       = document.getElementById("holder")
+const HOLDER       = document.getElementById("holder");
+const BNT_D = document.getElementById("btn-detial");
+const TEXT = document.getElementById("detial");
 
 BTN_CAL.addEventListener(`click`, calculate);
 BTN_RESET.addEventListener(`click`, reset);
+BNT_D.addEventListener(`click`, detial);
 
 function reset()
 {
@@ -38,5 +41,11 @@ function calculate()
     const P_HOLDER = document.getElementById("p-holder")
     P_HOLDER.classList.add(`text-blue-600`);
 }
+
+function detial()
+{
+    Text.classList.add(`text-blue-600`);
+}
+
 
 
