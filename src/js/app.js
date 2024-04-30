@@ -1,3 +1,5 @@
+prompt("what is your name?");
+alert(`welcom ${prompt.value}`);
 const INPUT_WEIGHT = document.getElementById("input-weight");
 const INPUT_HEIGHT = document.getElementById("input-height");
 const BTN_CAL      = document.getElementById("btn-cal");
