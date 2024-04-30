@@ -42,10 +42,6 @@ function calculate()
     P_HOLDER.classList.add(`text-blue-600`);
 }
 
-function detial()
-{
-    Text.classList.add(`text-blue-600`);
-}
 
 
 
