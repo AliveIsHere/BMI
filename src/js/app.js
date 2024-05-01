@@ -1,4 +1,5 @@
 
+
 const INPUT_WEIGHT = document.getElementById("input-weight");
 const INPUT_HEIGHT = document.getElementById("input-height");
 const BTN_CAL      = document.getElementById("btn-cal");
@@ -26,7 +27,11 @@ function calculate()
 
     if(WEIGHT < 18.5)
     {
-        HOLDER.innerText = `your weight must be more than 18.5 kg`
+        Swal.fire({
+            icon: "success",
+            title: "opsss",
+            text: "skkiny bitch"
+        })
     }
      if(HEIGHT < 80)
      {
@@ -45,3 +50,8 @@ function calculate()
 
 
 
+Swal.fire({
+    icon: "success",
+    title: "opsss",
+    text: "somthing is wrong"
+})

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="/src/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="w-full h-screen flex flex-col items-center justify-center bg-indigo-50">
    
@@ -29,10 +30,14 @@
       <div id="holder" class=" w-full h-10 absolute bottom-0 flex flex-col items-center justify-center"><p id="p-holder" class=""></p></div>
     </div>
     <p class="text-center text-gray-500 text-xs">created by Amir Karimi</p>
-    <button id="btn-click">click</button>
-    <p id="text"></p>
+    <button class="w-24 h-7 text-blue-600 rounded-lg text-sm border border-blue-600 hover:bg-blue-100 transition-all duration-500 absolute top-5 left-5" id="btn-click">see details</button>
+    <div class=" w-72 h-96 absolute top-20 left-5">
+      <p  class="" id="text"></p>
+    </div>
     <script type="module" src="/src/js/app.js"></script>
     <script src="src/js/text.js"></script>
+    <script src="src/js/alert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
 
