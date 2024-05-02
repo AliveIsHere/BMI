@@ -28,30 +28,33 @@ function calculate()
     if(WEIGHT < 18.5)
     {
         Swal.fire({
-            icon: "success",
-            title: "opsss",
-            text: "skkiny bitch"
+            icon: "error",
+            title: "error",
+            text: "your weight most be more than 18.5 kg"
         })
     }
      if(HEIGHT < 80)
      {
-        HOLDER.innerText = `your height must be more than 80 cm`
+        Swal.fire({
+            icon: "error",
+            title: "error",
+            text: "your height most be more than 80 cm"
+        })
      }
     if(WEIGHT >= 18.5 && HEIGHT >= 80)
     {
        const BMI = Math.round((WEIGHT / ((HEIGHT / 100) * (HEIGHT / 100))));
-       HOLDER.innerText = `your bmi is ${BMI}`;
+       Swal.fire({
+        icon: "success",
+        title: "good jub",
+        text: `your bmi is ${BMI}`
+    })
+      // HOLDER.innerText = `your bmi is ${BMI}`;
     }
     
-    const P_HOLDER = document.getElementById("p-holder")
-    P_HOLDER.classList.add(`text-blue-600`);
+   
 }
 
 
 
 
-Swal.fire({
-    icon: "success",
-    title: "opsss",
-    text: "somthing is wrong"
-})
